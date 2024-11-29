@@ -6,11 +6,13 @@ public class Main {
             return;
         }
 
+        System.out.println("Ruta:"+args[0]);
+
         String directoryPath = args[0];
         try {
             String[] contents = ListDirectoryContent.listDirectoryAlphabetically(directoryPath);
 
-            System.out.println("Contingut del directori ordenat alfabèticament:");
+            System.out.println("Directory contents sorted alphabetically:");
             for (String item : contents) {
                 System.out.println(item);
             }
