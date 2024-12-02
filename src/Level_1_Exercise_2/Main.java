@@ -5,19 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Arrays;
 
 public class Main {
-
-    public static void main(String[] args) {
-        if (args.length < 1) {
-            System.out.println("The directory path is missing");
-        }else{
-
-        }
-    }
-
-   /* public static void main(String[] args) {
-        //args=new String[1];
-        //args[0]= "/Users/jofrecocaavila/Documents/ITacademy";
-        System.out.println("laa");
+   public static void main(String[] args) {
         if (args.length != 1) {
             System.out.println("The directory path is missing");
         }else{
@@ -52,5 +40,5 @@ public class Main {
     }
     private static String getIndentation(int level) {
         return "    ".repeat(level);
-    }*/
+    }
 }
