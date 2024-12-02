@@ -1,4 +1,6 @@
 import java.io.File;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 
@@ -20,7 +22,17 @@ public class Main {
                 //System.out.println("Directory tree " + directoryPath + ":");
                 tree=tree+"Directory tree " + directoryPath + ":\n";
                 listDirectoryRecursively(directory, 0);
-                System.out.println(tree);
+
+                try (FileWriter fw = new FileWriter("src/Files/DirectoryTree.txt"))
+                {
+                    PrintWriter pw = new PrintWriter(fw);
+                    pw.println(tree);
+                    System.out.println("Has been written in DirectoryTree.txt");
+
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
@@ -43,6 +55,7 @@ public class Main {
             }
         }
     }
+
     private static String getIndentation(int level) {
         return "    ".repeat(level);
     }

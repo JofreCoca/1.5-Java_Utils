@@ -1,1 +1,22 @@
+Directory tree src/:
+(F) .DS_Store - 2024-12-02 13:44:14
+(D) Files - 2024-12-02 13:37:50
+    (F) DirectoryTree.txt - 2024-12-02 17:39:19
+(D) Level_1_Exercise_1 - 2024-12-02 12:11:05
+    (F) .DS_Store - 2024-12-02 12:11:05
+    (D) files - 2024-11-29 10:02:14
+        (F) El_patito_feo-Hans_Christian_Andersen.rtf - 2024-11-20 07:06:19
+        (F) Ensayos-Michel_de_Montaigne.rtf - 2024-11-20 06:14:51
+        (F) Hamlet-Shakespeare_William.rtf - 2024-11-21 08:45:35
+        (F) readme.txt - 2024-11-29 10:02:14
+    (F) ListDirectoryContent.class - 2024-11-29 09:54:26
+    (F) ListDirectoryContent.java - 2024-11-29 10:02:14
+    (F) Main.class - 2024-11-29 09:54:26
+    (F) Main.java - 2024-12-02 08:30:59
+(D) Level_1_Exercise_2 - 2024-12-02 13:08:09
+    (F) .DS_Store - 2024-12-02 12:24:29
+    (F) Main.class - 2024-12-02 13:05:42
+    (F) Main.java - 2024-12-02 13:08:09
+    (F) readme.txt - 2024-12-02 13:07:07
+(F) Main.java - 2024-12-02 17:39:30
 
