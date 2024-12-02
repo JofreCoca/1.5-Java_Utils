@@ -23,6 +23,7 @@ public class Main {
                 System.out.println(tree);
             }
         }
+
     }
 
     private static void listDirectoryRecursively(File directory, int level) {
