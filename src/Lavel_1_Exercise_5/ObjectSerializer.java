@@ -4,22 +4,20 @@ import java.io.*;
 
 public class ObjectSerializer {
 
-    // Mètode per serialitzar un objecte a un fitxer
     public static void serializeObject(Object obj, String filePath) throws IOException {
         if (!(obj instanceof Serializable)) {
-            throw new IllegalArgumentException("L'objecte no implementa Serializable");
+            throw new IllegalArgumentException("The object does not implement Serializable");
         }
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(filePath))) {
             oos.writeObject(obj);
-            System.out.println("Objecte serialitzat correctament a: " + filePath);
+            System.out.println("Object successfully serialized a: " + filePath);
         }
     }
 
-    // Mètode per desserialitzar un objecte des d'un fitxer
     public static Object deserializeObject(String filePath) throws IOException, ClassNotFoundException {
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(filePath))) {
             Object obj = ois.readObject();
-            System.out.println("Objecte desserialitzat correctament.");
+            System.out.println("Object successfully deserialized");
             return obj;
         }
     }

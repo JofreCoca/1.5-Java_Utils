@@ -2,10 +2,10 @@ package Lavel_1_Exercise_5;
 
 import java.io.Serializable;
 
-public class Usuario implements Serializable {
+public class User implements Serializable {
     private String name;
     private String key;
-    public Usuario(String name, String key){
+    public User(String name, String key){
         this.name=name;
         this.key=key;
     }
@@ -28,7 +28,7 @@ public class Usuario implements Serializable {
 
     @Override
     public String toString() {
-        return "Usuario{" +
+        return "User{" +
                 "name='" + name + '\'' +
                 ", key='" + key + '\'' +
                 '}';
