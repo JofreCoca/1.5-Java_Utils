@@ -4,8 +4,6 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
-        //args=new String[1];
-        //args[0]="/Users/jofrecocaavila/Documents/ITacademy/object.ser";
 
         User user =new User("Pepe","1234");
         System.out.println(user);
