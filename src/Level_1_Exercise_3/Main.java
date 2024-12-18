@@ -27,7 +27,7 @@ public class Main {
                     pw.println(tree);
                     System.out.println("Has been written in DirectoryTree.txt");
                 } catch (Exception e) {
-                    e.printStackTrace();
+                    System.out.println("Exception FileWriter");
                 }
             }
         }
