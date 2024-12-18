@@ -13,7 +13,6 @@ public class Main {
             throw new RuntimeException(e);
         }
 
-
         try {
             User user2 = (User) ObjectSerializer.deserializeObject(args[0]);
             System.out.println(user2);
@@ -22,7 +21,5 @@ public class Main {
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
-
-
     }
 }
