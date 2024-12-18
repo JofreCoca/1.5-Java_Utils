@@ -4,7 +4,6 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
-
         User user =new User("Pepe","1234");
         System.out.println(user);
         try {
