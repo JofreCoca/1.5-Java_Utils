@@ -8,13 +8,7 @@ public class Main {
     static String tree;
    public static void main(String[] args) {
        tree="";
-       //args=new String[2];
-       //args[0]="src/";
-       //args[1]="src/readme.txt";
-       //System.out.println("Route content read "+args[1]);
        readTxtFiles(args[1]);
-
-
         if (args.length <= 0) {
             System.out.println("The directory path is missing");
         }else{
@@ -23,18 +17,13 @@ public class Main {
             if (!directory.exists() || !directory.isDirectory()) {
                 System.out.println("The path provided is not a valid directory");
             }else{
-                //System.out.println("Directory tree " + directoryPath + ":");
                 tree=tree+"Directory tree " + directoryPath + ":\n";
                 listDirectoryRecursively(directory, 0);
-
-                //try (FileWriter fw = new FileWriter("src/DirectoryTree.txt"))
                 try (FileWriter fw = new FileWriter("Level_1_Exercise_4/DirectoryTree.txt"))
                 {
                     PrintWriter pw = new PrintWriter(fw);
                     pw.println(tree);
                     System.out.println("Has been written in DirectoryTree.txt");
-
-
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -52,7 +41,6 @@ public class Main {
             for (File file : files) {
                 String type = file.isDirectory() ? "(D)" : "(F)";
                 String lastModified = sdf.format(file.lastModified());
-                //System.out.println(getIndentation(level) + type + " " + file.getName() + " - " + lastModified);
                 tree = tree+getIndentation(level) + type + " " + file.getName() + " - " + lastModified+"\n";
                 if (file.isDirectory()) {
                     listDirectoryRecursively(file, level + 1);
